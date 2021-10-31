@@ -1,0 +1,26 @@
+ALGORITHM chechpoint 4
+VAR
+n,i,k:INTEGER;
+T:ARRAY_OF INTEGER[100];
+BEGIN
+    write("donner la longueur du tableau");
+    read(n);
+    //Lire la premier element du tableau//
+    write("t[0]=");
+    read(t[0]);
+    //lire tableau//
+
+    FOR i FROM 1 TO n STEP step  DO
+        k=0;
+        WHILE (t[k]<=t[i]) DO
+            write("t[",i,"]");
+            read(t[i]);
+            k++;
+        END_WHILE 
+    END_FOR
+
+    //affichage tableau //
+    FOR i FROM 0 TO n STEP step  DO
+        write(t[i]);
+    END_FOR
+END
